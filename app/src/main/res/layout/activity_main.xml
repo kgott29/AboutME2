@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KNOW ME"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Circle Profile -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/EnterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- About Me Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Me"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/aboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Tell something that none know about you🤫"
+            android:gravity="top"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Hobbies Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobbies &amp; Interests"/>
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+        <!-- Hobby Options -->
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏞️ Adventure"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:buttonTint="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📺 NETFLIX &amp; CHILL"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:buttonTint="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✈️ Travelling"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:buttonTint="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        /<CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📸 Photography"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:buttonTint="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/showButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Show Info"
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="20dp"
+            android:backgroundTint="@color/pastel_yellow"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+</ScrollView>
